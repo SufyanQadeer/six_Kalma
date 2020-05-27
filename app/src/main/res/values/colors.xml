@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#16091B</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#04D39F</color>
+    <color name="about_color">#001f35</color>
+   <color name="black">#000000</color>
+    <color name="bottom_bar">#000</color>
+    <color name="cardview_dark_background">#ff424242</color>
+    <color name="cardview_light_background">#ffffffff</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="color">#66eeeeee</color>
+    <color name="error_color_material">#f4511e</color>
+    <color name="header_bg">#02DEA2</color>
+    <color name="index_hover">#fff</color>
+    <color name="notification_material_background_media_default_color">#ff424242</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#ffed35</color>
+    <color name="color_light_blue">#f4f4fa</color>
+</resources>

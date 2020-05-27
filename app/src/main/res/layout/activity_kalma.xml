@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_fourty_five"
+        android:layout_below="@+id/strokeline_top"
+        android:layout_marginTop="0dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:splitMotionEvents="false">
+
+        <LinearLayout
+            android:id="@+id/tab1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_color_h"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onButtonClick"
+            android:orientation="vertical"
+            android:tag="3">
+
+            <TextView
+                android:id="@+id/tv_tab_arabic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/header_bg"
+                android:textSize="@dimen/text_size_seventeen" />
+
+            <TextView
+                android:id="@+id/tv_tab_mean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_twelve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_color_r"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onButtonClick"
+            android:orientation="vertical"
+            android:tag="4">
+
+            <TextView
+                android:id="@+id/tv_tab_trans_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tab_trans_name"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_seventeen" />
+
+            <TextView
+                android:id="@+id/tv_tab_trans_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tab_trans_mean"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_twelve" />
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/btns_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/size_fourty_five"-->
+<!--        android:layout_below="@+id/button_layout"-->
+<!--        android:background="@color/bottom_bar"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:splitMotionEvents="false">-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_play"-->
+<!--            style="@style/btn_bottom_bar_style"-->
+<!--            android:src="@drawable/btn_play"-->
+<!--            android:tag="5" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_stop"-->
+<!--            style="@style/btn_bottom_bar_style"-->
+<!--            android:src="@drawable/btn_stop"-->
+<!--            android:tag="6" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_share"-->
+<!--            style="@style/btn_bottom_bar_style"-->
+<!--            android:src="@drawable/btn_share"-->
+<!--            android:tag="7" />-->
+<!--    </LinearLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/tobbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_fourty_five"
+        android:background="@color/black"
+        android:splitMotionEvents="false">
+
+        <ImageButton
+            android:id="@+id/btn_prev"
+            style="@style/btn_top_bar_style"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size_seven"
+            android:src="@drawable/btn_prev"
+            android:tag="1" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            style="@style/btn_top_bar_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_seven"
+            android:src="@drawable/btn_next"
+            android:tag="2" />
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_twenty_two" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btns_layout"
+        android:layout_below="@+id/button_layout"
+        android:background="#f4f4fa">
+
+        <ScrollView
+            android:id="@+id/container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:scrollbars="none"
+            android:splitMotionEvents="false">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_kalma_arabic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:layout_marginLeft="@dimen/size_fifteen"
+                        android:layout_marginTop="@dimen/size_five"
+                        android:layout_marginRight="@dimen/size_five"
+                        android:fontFamily="@font/avenirnext"
+                        android:lineSpacingExtra="-4dp"
+                        android:padding="4dp"
+
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_arabic" />
+
+                    <TextView
+                        android:id="@+id/tv_eng_trans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_fifteen"
+                        android:layout_marginTop="@dimen/size_five"
+                        android:textAllCaps="false"
+                        android:layout_marginRight="@dimen/size_five"
+                        android:layout_marginBottom="@dimen/size_five"
+                        android:fontFamily="@font/avenirnext"
+                        android:lineSpacingExtra="2dp"
+                        android:padding="4dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_twenty_two" />
+
+                    <View
+                        style="@style/container_stroke_line"
+                        android:layout_marginTop="@dimen/size_ten"
+                        android:layout_marginBottom="@dimen/size_twenty" />
+
+
+                    <TextView
+                        android:id="@+id/tv_kalma_transliteration"
+                        android:layout_width="match_parent"
+                        android:textAllCaps="false"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_fifteen"
+                        android:layout_marginRight="@dimen/size_five"
+                        android:layout_marginBottom="@dimen/size_five"
+                        android:fontFamily="@font/avenirnext"
+                        android:lineSpacingExtra="2dp"
+                        android:padding="4dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_twenty_two" />
+
+
+                    <TextView
+                        android:id="@+id/tv_urdu_trans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_fifteen"
+                        android:layout_marginRight="@dimen/size_five"
+                        android:layout_marginBottom="@dimen/size_five"
+                        android:fontFamily="@font/avenirnext"
+                        android:textAllCaps="false"
+                        android:lineSpacingExtra="-10dp"
+                        android:padding="4dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_urdu" />
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout_activity_kalma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:splitMotionEvents="false">
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/strokeline_bottom"
+        style="@style/stroke_line"
+        android:layout_above="@+id/btns_layout" />
+
+    <View
+        android:id="@+id/strokeline_top"
+        style="@style/stroke_line"
+        android:layout_below="@+id/tobbar_layout" />
+
+    <LinearLayout
+        android:id="@+id/btns_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_fourty_five"
+      android:layout_alignParentBottom="true"
+        android:background="@color/bottom_bar"
+        android:orientation="horizontal"
+        android:splitMotionEvents="false">
+
+        <ImageButton
+            android:id="@+id/btn_play"
+            style="@style/btn_bottom_bar_style"
+            android:src="@drawable/btn_play"
+            android:tag="5" />
+
+        <ImageButton
+            android:id="@+id/btn_stop"
+            style="@style/btn_bottom_bar_style"
+            android:src="@drawable/btn_stop"
+            android:tag="6" />
+
+        <ImageButton
+            android:id="@+id/btn_share"
+            style="@style/btn_bottom_bar_style"
+            android:src="@drawable/btn_share"
+            android:tag="7" />
+    </LinearLayout>
+
+</RelativeLayout>

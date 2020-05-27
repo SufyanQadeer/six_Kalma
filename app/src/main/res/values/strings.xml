@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Six Kalimas</string>
+
+
+    <string name="about_header">About Us</string>
+
+    <string name="sharing_text">Hi, I would like to share with you a new app: Six_Kalma in Urdu and English..</string>
+
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="cancel">Cancel</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="device">small</string>
+    <string name="fifth_kalma_header">Fifth Kalma</string>
+    <string name="fifth_kalma_mean">Astaghfar</string>
+    <string name="first_kalma_header">First Kalma</string>
+    <string name="first_kalma_mean">Tayyeba</string>
+    <string name="fourth_kalma_header">Fourth Kalma</string>
+    <string name="fourth_kalma_mean">Tauhid</string>
+    <string name="img_content_descrption">Image</string>
+    <string name="img_descrptn">Image</string>
+    <string name="index_header">6 KALMA OF ISLAM</string>
+    <string name="kalma">KALMA OF ISLAM</string>
+    <string name="messenger_send_button_text">Send</string>
+    <string name="notification_msg">Recite Surah Kahf and earn sawab</string>
+    <string name="s1">Save image</string>
+    <string name="s2">Allow Ad to store image in Picture gallery?</string>
+    <string name="s3">Accept</string>
+    <string name="s4">Decline</string>
+    <string name="s5">Create calendar event</string>
+    <string name="s6">Allow Ad to create a calendar event?</string>
+    <string name="s7">Test Ad</string>
+    <string name="second_kalma_header">Second Kalma</string>
+    <string name="second_kalma_mean">Shahaadat</string>
+    <string name="six">6</string>
+    <string name="sixth_kalma_header">Sixth Kalma</string>
+    <string name="sixth_kalma_mean">Rud-e-Kuffer</string>
+    <string name="tab_trans_mean">English / Urdu</string>
+    <string name="tab_trans_name">TRANSLATION</string>
+    <string name="third_kalma_header">Third Kalma</string>
+    <string name="third_kalma_mean">Tumjeed</string>
+    <string name="version">Version 1.0</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <drawable name="tab_color_h">#011a2e</drawable>
+    <drawable name="tab_color_r">#0d5488</drawable>
+    <drawable name="upgrade_h">#033d6c</drawable>
+    <drawable name="upgrade_r">#045393</drawable>
+</resources>
